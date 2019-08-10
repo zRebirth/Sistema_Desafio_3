@@ -1,0 +1,16 @@
+
+21:41 09/08/2019
+
+Sistema Hospital
+— Modelos(Pessoa, Salas cirurgicas)
+—Interface Gráfica
+V.20(+3semanas)
+
+	Configurar com BD/CRUD
+v.30(+1semana)
+	Validações.
+
+Obs.: enfermaria;
+apartamentos;
+calendarios de cirurgia, com 3 salas de cirurgias.
+
