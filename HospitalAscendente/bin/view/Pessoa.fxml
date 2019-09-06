@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #CFCFCF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.hospitalif.controller.Pessoa">
+   <children>
+      <Label layoutX="183.0" layoutY="31.0" style="-fx-font-family: Georgia; -fx-font-size: 26;" text="Prontuário da Pessoa">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="69.0" layoutY="83.0" text="Nome:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="69.0" layoutY="127.0" text="CPF">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="69.0" layoutY="171.0" text="Data de nascimento:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="69.0" layoutY="210.0" text="Naturalidade:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="69.0" layoutY="250.0" text="Estado civil:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="69.0" layoutY="286.0" text="Sexo:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="69.0" layoutY="327.0" text="Nome da mãe:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="286.0" layoutY="127.0" text="RG:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="403.0" layoutY="210.0" text="UF:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="69.0" layoutY="364.0" text="Nome do pai:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="65.0" layoutY="403.0" text="Tipo Sanguíneo:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ImageView layoutX="539.0" layoutY="31.0">
+         <image>
+            <Image url="@../../src/br/com/hospitalif/view/icon/ascendente.png" />
+         </image>
+      </ImageView>
+      <MenuBar layoutX="-2.0" layoutY="2.0" prefHeight="25.0" prefWidth="600.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="Arquivos">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Abrir" />
+                  <MenuItem mnemonicParsing="false" text="Salvar" />
+                  <MenuItem mnemonicParsing="false" text="Salvar como..." />
+                  <MenuItem mnemonicParsing="false" text="Sair" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Editar">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Selecionar tudo" />
+                  <MenuItem mnemonicParsing="false" text="Deletar" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Ajuda">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Políticas da saúde" />
+                  <MenuItem mnemonicParsing="false" text="Sobre o Hospital" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <JFXTextField fx:id="txtNome" layoutX="126.0" layoutY="81.0" prefHeight="25.0" prefWidth="423.0" />
+      <JFXTextField fx:id="txtCPF" layoutX="102.0" layoutY="125.0" prefHeight="25.0" prefWidth="172.0" />
+      <JFXTextField fx:id="txtRG" layoutX="329.0" layoutY="125.0" prefHeight="25.0" prefWidth="148.0" />
+      <JFXTextField fx:id="txtNaturalidade" layoutX="167.0" layoutY="208.0" prefHeight="25.0" prefWidth="148.0" />
+      <JFXComboBox fx:id="cboUF" layoutX="439.0" layoutY="208.0" promptText="MS" />
+      <JFXTextField fx:id="txtNomeMae" layoutX="174.0" layoutY="325.0" prefHeight="25.0" prefWidth="374.0" />
+      <JFXTextField fx:id="txtNomePai" layoutX="174.0" layoutY="362.0" prefHeight="25.0" prefWidth="374.0" />
+      <JFXComboBox fx:id="cboTipoSanguineo" layoutX="183.0" layoutY="401.0" prefHeight="25.0" prefWidth="13.0" promptText="A+" />
+      <JFXComboBox fx:id="cboEstadoCivil" layoutX="160.0" layoutY="248.0" prefHeight="25.0" prefWidth="89.0" promptText="Solteiro(a)" />
+      <JFXComboBox fx:id="cboSexo" layoutX="117.0" layoutY="284.0" prefHeight="25.0" prefWidth="136.0" promptText="Masculino" />
+      <JFXDatePicker fx:id="dateDataNascimento" layoutX="212.0" layoutY="169.0" />
+      <JFXButton fx:id="btnFinalizarCadastro" layoutX="377.0" layoutY="447.0" onAction="#FinalizarCadastro" prefHeight="31.0" prefWidth="210.0" style="-fx-background-color: #F4511E;" text="Finalizar Cadastro" textAlignment="JUSTIFY" textFill="#f5f0f0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXHamburger layoutX="143.0" layoutY="36.0" />
+   </children>
+</AnchorPane>

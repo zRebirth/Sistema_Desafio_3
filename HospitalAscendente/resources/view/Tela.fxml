@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.validation.DoubleValidator?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="250.0" prefWidth="400.0" style="-fx-background-color: #CFCFCF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.hospitalif.controller.Tela">
+   <children>
+      <Label layoutX="75.0" layoutY="78.0" text="Usuário:">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label layoutX="86.0" layoutY="115.0" text="Senha:">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label layoutX="83.0" layoutY="154.0" text="Não possui cadastro?">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Hyperlink layoutX="222.0" layoutY="150.0" onAction="#FazerCadastro" text="Clique aqui." underline="true">
+         <font>
+            <Font size="15.0" />
+         </font></Hyperlink>
+      <Label layoutX="125.0" layoutY="21.0" text="Hospital Ascendente">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="78.0" layoutY="195.0" text="Entrar com:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ImageView layoutX="62.0" layoutY="12.0">
+         <image>
+            <Image url="@../../src/br/com/hospitalif/view/icon/ascendente.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnFacebook" layoutX="154.0" layoutY="186.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="44.0" visible="false" />
+      <Button fx:id="btnGmail" layoutX="203.0" layoutY="186.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="44.0" visible="false" />
+      <Button fx:id="btnLinkedin" layoutX="252.0" layoutY="186.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="44.0" visible="false" />
+      <ImageView fitHeight="39.0" fitWidth="44.0" layoutX="255.0" layoutY="186.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../bin/br/com/hospitalif/view/icon/linkedin.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="39.0" fitWidth="44.0" layoutX="206.0" layoutY="186.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../bin/br/com/hospitalif/view/icon/gmail.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="39.0" fitWidth="44.0" layoutX="157.0" layoutY="186.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../bin/br/com/hospitalif/view/icon/facebook.png" />
+         </image>
+      </ImageView>
+      <DoubleValidator layoutX="307.0" layoutY="60.0" />
+      <JFXTextField fx:id="txtUsuario" layoutX="140.0" layoutY="76.0" />
+      <JFXPasswordField fx:id="txtSenha" layoutX="140.0" layoutY="113.0" />
+      <JFXButton fx:id="btnAcessar" layoutX="319.0" layoutY="190.0" onAction="#Acessar" style="-fx-background-color: green;" text="Acessar">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
